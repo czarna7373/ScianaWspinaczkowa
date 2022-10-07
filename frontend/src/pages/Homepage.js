@@ -4,7 +4,7 @@ import useFetch from '../hooks/useFetch';
 import '../styles/Homepage.css';
 
 export default function Homepage() {
-    const {loading, error, data,} = useFetch('http://localhost:1337/api/main-page?populate=*');
+    const {loading, error, data} = useFetch('http://localhost:1337/api/main-page?populate=*');
     if (loading)
         return <p> Loading ...</p>;
 

@@ -14,7 +14,9 @@ export default function Products() {
     <div className="products-container">      
       {data.map((product) =>
       <div key = {product.id} className = "card">
-        <div><img src={product.attributes?.photo?.data?.attributes?.formats?.small?.url} alt="#"/></div>
+        <div>
+          <img src={product.attributes?.photo?.data?.attributes?.formats?.large?.url} alt="#"/>
+        </div>
         <div className="card-description">
           <h6>{product.attributes.name}</h6>
           <h6>{`Cena: ${product.attributes.price} PLN`}</h6>
