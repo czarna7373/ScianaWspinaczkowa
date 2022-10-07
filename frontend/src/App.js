@@ -16,8 +16,11 @@ function App() {
             <Routes>
                 <Route exact path='/'
                     element={<Homepage/>}/>
-                <Route exact path='/products'
-                    element={<Products/>}/>
+                <Route path='/products'
+                    element={
+                        token ? <Products/>: <Login token={token}
+                            setToken={setToken}/>
+                    }/>
                 <Route exact path='/login'
                     element={<Login/>}/>
             </Routes>
