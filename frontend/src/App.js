@@ -13,12 +13,12 @@ const [token,setToken] = useState(localStorage.getItem("usrToken") ?? null);
     return (
     <div className="App">
         <Router>
-            <Navbar/>
+            <Navbar setToken={setToken} />
             <Routes>
                 <Route exact path='/'
                     element={<Homepage/>}/>
                 <Route path='/products'
-                    element={token ? <Products/> : <Login token={token} setToken={setToken}/>}/>
+                    element={<Products/>}/>
             </Routes>
         </Router>
 
