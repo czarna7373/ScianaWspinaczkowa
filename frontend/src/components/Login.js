@@ -2,10 +2,13 @@ import {useState} from 'react';
 import axios from 'axios';
 import '../styles/Login.css';
 
+
+//const [token, setToken] = useState(localStorage.getItem("usrToken") ?? null);
+
 const Login = ({token, setToken}) => {
     const [identifier, setIdentifier] = useState('');
     const [password, setPassword] = useState('');
-    const [error, setError] = useState('');
+    const [error, setError] = useState('');  
 
     const loginHandler = () => {
         setError("");
