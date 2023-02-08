@@ -3,19 +3,19 @@ import useFetch from '../hooks/useFetch';
 import '../styles/Products.css';
 
 export default function Products() {
-  const {loading, error, data,} = useFetch('http://localhost:1337/api/products?populate=*');
+  const {loading, error, data} = useFetch('http://localhost:1337/api/products?populate=*');
   if (loading)
       return <p> Loading ...</p>;
 
   if (error) 
-      return <p> Error : (</p>;
+      return <p> Error : </p>;
   
     return (
     <div className="products-container">      
       {data.map((product) =>
       <div key = {product.id} className = "card">
         <div>
-          <img src={product.attributes?.photo?.data?.attributes?.formats?.large?.url} alt="#"/>
+          <img src={`http://localhost:1337${product.attributes.photo.data?.attributes?.url}`} alt="#"/>
         </div>
         <div className="card-description">
           <h6>{product.attributes.name}</h6>

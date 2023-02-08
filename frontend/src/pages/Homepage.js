@@ -13,7 +13,7 @@ export default function Homepage() {
 
         return (
         <article className={'homepage'}>
-            <h2>More Description</h2>
+            <h2>Takie tango</h2>
             <hr/>
             <section className={'aboutBody'}>
                 <div className={'aboutDescription'}>
@@ -25,15 +25,7 @@ export default function Homepage() {
                             alt="img"/>)
                     } </div>
                     <div>                        
-                        <Link to={'/'} style={
-                                {
-                                    textDecoration: 'none',
-                                    background: 'black',
-                                    color: 'white',
-                                    border: '1px solid black',
-                                    padding: '5px 10px',
-                                }
-                        }> {'< Back to Home'} </Link>
+                        <Link id='backHome' to={'/'}> {'Back to Home'} </Link>
                     </div>
                 </div>
             </section>

@@ -8,24 +8,19 @@ import {useState} from 'react';
 import Login from './components/Login';
 
 function App() {
-    const [token, setToken] = useState(localStorage.getItem("usrToken") ?? null);
-
+    
     return (<div className="App">
         <Router>
-            <Navbar setToken={setToken}/>
+            <Navbar/>
             <Routes>
                 <Route exact path='/'
                     element={<Homepage/>}/>
                 <Route path='/products'
-                    element={
-                        token ? <Products/>: <Login token={token}
-                            setToken={setToken}/>
-                    }/>
+                    element={<Products/>}/>
                 <Route exact path='/login'
                     element={<Login/>}/>
             </Routes>
         </Router>
-
         <Footer/>
 
     </div>);

@@ -19,7 +19,7 @@ overflow: hidden;
 }
 
 .nav {
-  background-color: black;
+  background-color: rgb(43, 15, 112);
   color: white;
   display: flex;
   justify-content: space-between;

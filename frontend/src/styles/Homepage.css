@@ -1,4 +1,15 @@
 .homepage img{
-    width: auto;
+    width: max-content;
+}
+#backHome {  
+    text-decoration: solid;
+    background-color: rgb(13, 126, 146);
+    color: white;    
+    border: '1px solid black';
+    padding: '5px 10px';
+    outline-offset: 15px;
+}
 
+#backHome:hover {
+    background-color: blueviolet;
 }
