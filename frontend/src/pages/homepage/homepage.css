@@ -1,5 +1,5 @@
 .homepage img{
-    width: max-content;
+    object-fit: fill;
 }
 #backHome {  
     text-decoration: solid;

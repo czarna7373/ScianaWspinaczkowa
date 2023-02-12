@@ -1,11 +1,11 @@
 import {useState} from 'react';
 import axios from 'axios';
-import '../styles/Login.css';
+import './login.css';
 
 
 //const [token, setToken] = useState(localStorage.getItem("usrToken") ?? null);
 
-const Login = ({token, setToken}) => {
+export const Login = ({token, setToken}) => {
     const [identifier, setIdentifier] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');  
@@ -55,4 +55,3 @@ const Login = ({token, setToken}) => {
     </div>);
 };
 
-export default Login;

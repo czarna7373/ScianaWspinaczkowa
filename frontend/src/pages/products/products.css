@@ -4,12 +4,12 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-    padding: 10px;
+    padding: 30px;
 }
 
 .products-container img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     transition: all 0.3s ease;
 }
 
@@ -17,18 +17,30 @@
     transform: scale(1.1);
 }
 
+.products-container button {
+    background-color: rgb(129, 63, 129);
+    color: aliceblue;
+    padding: 10px;
+}
+
+.products-container button:hover {
+    transform: scale(1.0);
+}
+
 .card {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     margin: 20px 0;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
 }
 
 .card-description {
+    inline-size: 250px;
     display: flex;
-    align-items: flex-start;
+    align-items: start;
     flex-direction: column;
 }
+

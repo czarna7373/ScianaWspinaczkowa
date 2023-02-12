@@ -32,15 +32,16 @@
         "images"
       ]
     },
-    "availability": {
-      "type": "boolean",
-      "required": true
-    },
     "orders": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::order.order",
       "inversedBy": "products"
+    },
+    "availability": {
+      "type": "integer",
+      "min": 0,
+      "default": 5
     }
   }
 }

@@ -18,64 +18,8 @@ height: 100%;
 overflow: hidden;
 }
 
-.nav {
-  background-color: rgb(43, 15, 112);
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 2rem;
-  padding: 0 1rem; 
-}
-
 .site-title {
   font-size: 2rem;
 }
 
-.nav ul {
-padding: 0;
-margin: 0;
-list-style: none;
-display: flex;
-gap: 1rem;
-}
 
-.nav a {
-  color: inherit;
-  text-decoration: none;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding: .25rem;
-}
-
-.nav li.active {
-  background-color: darkslateblue;
-
-}
-
-.nav li:hover {
-  background-color: cadetblue;
-}
-
-
-.footer {
-  width: 100%;
-  height: 10vh;
-  background-color: black;
-  display: flex;
-  align-items: center;
-  color: white;
-  justify-content: center;
-  font-size: 19px;
-  font-weight: bold;
-}
-
-.log-out-btn {
-  margin-left: 50px;
-  padding: 10px;
-  width: 100px;
-  border: 1px solid #cecece;
-  background-color: black;
-  color: white;  
-}

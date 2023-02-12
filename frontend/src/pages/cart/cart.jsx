@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function ReviewDetails() {
+export const Cart = () => {
   return (
     <div>
-      Review Details
+      Cart
     </div>
   )
 }

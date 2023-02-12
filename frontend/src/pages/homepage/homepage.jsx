@@ -1,9 +1,9 @@
 import React from 'react';
 import {Link,} from 'react-router-dom';
-import useFetch from '../hooks/useFetch';
-import '../styles/Homepage.css';
+import useFetch from '../../hooks/useFetch';
+import './homepage.css';
 
-export default function Homepage() {
+export function Homepage() {
     const {loading, error, data} = useFetch('http://localhost:1337/api/main-page?populate=*');
     if (loading)
         return <p> Loading ...</p>;
